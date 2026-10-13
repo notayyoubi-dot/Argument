@@ -1,183 +1,213 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GC Court & Admin Response | Ruling on Member Karim's Appeal</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        discord: {
-                            bg: '#1e1f22',
-                            card: '#2b2d31',
-                            subcard: '#313338',
-                            border: '#3f4147',
-                            accent: '#5865f2',
-                            red: '#da373c',
-                            green: '#23a55a',
-                            gold: '#f0b232'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <title>GC Court - Official Appeal Rejection Ruling</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-main: #f0f6fc;
+            --text-muted: #8b949e;
+            --accent-red: #f85149;
+            --accent-gold: #d29922;
+            --accent-blue: #58a6ff;
+        }
+
         body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #111214;
-            color: #dbdee1;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: var(--text-main);
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            color: var(--accent-red);
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .meta-info {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid var(--accent-blue);
+            padding: 15px;
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .meta-info span {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: var(--accent-blue);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        p, li {
+            color: var(--text-main);
+            font-size: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .defense-box {
+            background: rgba(248, 81, 73, 0.05);
+            border: 1px solid rgba(248, 81, 73, 0.2);
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin: 20px 0;
+        }
+
+        .defense-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            color: var(--accent-red);
+        }
+
+        .article-ref {
+            font-family: monospace;
+            background: rgba(210, 153, 34, 0.15);
+            color: var(--accent-gold);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .ruling-conclusion {
+            background: rgba(248, 81, 73, 0.1);
+            border: 2px solid var(--accent-red);
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .ruling-conclusion h2 {
+            color: var(--accent-red);
+            border: none;
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
         }
     </style>
 </head>
-<body class="min-h-screen py-10 px-4 md:px-8">
+<body>
 
-    <!-- Container -->
-    <div class="max-w-4xl mx-auto space-y-6">
+<div class="container">
+    <header>
+        <h1>GC SERVER JUDICIAL COMMITTEE</h1>
+        <p>Official Judgment: Rejection of Appeal & Invocation of Article V</p>
+    </header>
 
-        <!-- Header Banner -->
-        <header class="bg-discord-card border border-discord-border rounded-xl p-6 shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-2 h-full bg-discord-gold"></div>
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                <div>
-                    <div class="inline-flex items-center gap-2 bg-discord-subcard border border-discord-border text-discord-gold text-xs px-3 py-1 rounded-full mb-3 font-semibold">
-                        <span>⚖️ المحكمة العليا وإدارة سيرفر GC</span>
-                    </div>
-                    <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide">رد الإدارة وهيئة القضاء على طعن العضو (Karim)</h1>
-                    <p class="text-xs md:text-sm text-gray-400 mt-1">الرقم المرجعي للدعوى: <span class="font-mono text-discord-accent">GC-APPEAL-2026-004</span></p>
-                </div>
-                <div class="flex flex-col items-end">
-                    <span class="bg-discord-red/20 border border-discord-red text-discord-red font-bold text-xs px-3 py-1.5 rounded-lg">
-                        حكم نهائي مبرم
-                    </span>
-                    <span class="text-xs text-gray-500 mt-2 font-mono">13 أكتوبر 2026</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- Status Summary Card -->
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="bg-discord-card border border-discord-border rounded-lg p-4">
-                <span class="text-xs text-gray-400 block mb-1">القبول الشكلاني</span>
-                <span class="text-sm font-bold text-discord-green flex items-center gap-1">
-                    ✓ مقبول شكلاً (بموجب المادة 4)
-                </span>
-            </div>
-            <div class="bg-discord-card border border-discord-border rounded-lg p-4">
-                <span class="text-xs text-gray-400 block mb-1">البت في الموضوع</span>
-                <span class="text-sm font-bold text-discord-red flex items-center gap-1">
-                    ✗ رفض الطعن في المضمون
-                </span>
-            </div>
-            <div class="bg-discord-card border border-discord-border rounded-lg p-4">
-                <span class="text-xs text-gray-400 block mb-1">القرار المعدل</span>
-                <span class="text-sm font-bold text-discord-gold flex items-center gap-1">
-                    ⚖️ تخفيف جزئي وإيقاف مشروط
-                </span>
-            </div>
-        </section>
-
-        <!-- Preamble Section -->
-        <section class="bg-discord-card border border-discord-border rounded-xl p-6 space-y-4">
-            <h2 class="text-lg font-bold text-white border-b border-discord-border pb-3 flex items-center gap-2">
-                <span>📑</span> تمهيد وبيان اختصاص
-            </h2>
-            <p class="text-sm leading-relaxed text-gray-300">
-                بعد الاطلاع على مذكرة الطعن والدفاع المرفوعة من العضو **كريم (Karim)**، والمتضمنة دفوعاً شكلية وموضوعية استناداً إلى أصل المادة (2) والمادة (4) والحكم الختامي لدستور سيرفر GC؛ تؤكد المحكمة والإدارة احترامها التام للتسلسل الدستوري وحق جميع الأعضاء في ممارسة حق الدفاع والمطالبة بإعادة النظر.
-            </p>
-            <div class="bg-discord-subcard border border-discord-border p-4 rounded-lg text-xs leading-relaxed text-gray-400">
-                <strong class="text-discord-gold block mb-1">الرد على مصادرة حق الاستئناف:</strong>
-                تُقر هيئة القضاء بصحة الدفع الشكلي المقدم من الطاعن بشأن بطلان عبارة <em>"أي شكل من أشكال الاستئناف مرفوض تماماً"</em> الملحقة بالإعلان السابق، لكونها تتعارض صراحة مع نص المادة الرابعة (بند 1) من الدستور. وبناءً عليه، تقرر قبول نظر الطعن **شكلاً**.
-            </div>
-        </section>
-
-        <!-- Detailed Rebuttal Section -->
-        <section class="bg-discord-card border border-discord-border rounded-xl p-6 space-y-6">
-            <h2 class="text-lg font-bold text-white border-b border-discord-border pb-3 flex items-center gap-2">
-                <span>⚔️</span> التفنيد الموضوعي للدفوع والرد الرسمي
-            </h2>
-
-            <!-- Point 1 -->
-            <div class="space-y-2">
-                <h3 class="text-sm font-bold text-discord-accent flex items-center gap-2">
-                    <span>1.</span> بخصوص ادعاء عدم رجعية القواعد العقابية والأصل في الإباحة:
-                </h3>
-                <p class="text-sm leading-relaxed text-gray-300 bg-discord-subcard p-4 rounded-lg border border-discord-border">
-                    تستند الإدارة إلى قواعد **حسن النظام والأمان الموكل للإدارة** قبل وبعد صدور الدستور. حجز المساحات الصوتية (Soundboard Slots) ثم حذفها بقرار فردي بهدف إتاحة الفرصة لإعادة ترتيب الساوند بورد الخاصة بجهات أو أصدقاء معينين يمثل **تلاعباً بآليات السيرفر** واستغلالاً غير عادل للخصائص المتاحة. القواعد المناهضة للتلاعب واستغلال الخصائص هي قواعد عرفية ثابتة بسيرفر GC ولا تطلب نصوصاً تفصيلية مسبقة.
-                </p>
-            </div>
-
-            <!-- Point 2 -->
-            <div class="space-y-2">
-                <h3 class="text-sm font-bold text-discord-accent flex items-center gap-2">
-                    <span>2.</span> بخصوص ادعاء انعدام التحقيق وتجاوز ضمانات الدفاع:
-                </h3>
-                <p class="text-sm leading-relaxed text-gray-300 bg-discord-subcard p-4 rounded-lg border border-discord-border">
-                    الواقعة ثابتة بسجلات السيرفر الفنية (Server Audit Logs) والرسائل الموثقة التي تثبت الفعل المادي وموجب الحذف والتعديل، وهي أدلة مادية لا تحتاج لإجراءات جلسات مطولة. ومعه فإن تقديم الطاعن لمذكرة الدفاع الحالية يعتبر ممارسة فعلية ومكتملة لحقه الدستوري في الاستماع والدفاع.
-                </p>
-            </div>
-
-            <!-- Point 3 -->
-            <div class="space-y-2">
-                <h3 class="text-sm font-bold text-discord-accent flex items-center gap-2">
-                    <span>3.</span> بخصوص انتفاء القصد الإضراري وحقيقة المصلحة:
-                </h3>
-                <p class="text-sm leading-relaxed text-gray-300 bg-discord-subcard p-4 rounded-lg border border-discord-border">
-                    على الرغم من تأكيد الطاعن أن الصوت المحذوف يخصه ("زوقو") وأن دافعه كان تفريغ مساحة للعموم، فإن القيام بهذا التصرف بقرار فردي ودون التنسيق مع إدارة الصوتيات أو الإشراف يخلق سابقة تتيح لكل عضو إدارة الخصائص المتاحة وفق تقديره الشخصي، وهو ما يخل بانتظام المرفق العام للسيرفر.
-                </p>
-            </div>
-
-            <!-- Point 4 -->
-            <div class="space-y-2">
-                <h3 class="text-sm font-bold text-discord-accent flex items-center gap-2">
-                    <span>4.</span> بخصوص الغلو في العقوبة وحظر "الكليبات":
-                </h3>
-                <p class="text-sm leading-relaxed text-gray-300 bg-discord-subcard p-4 rounded-lg border border-discord-border">
-                    تقر هيئة القضاء جزئياً بهذا الدفع؛ حيث إن الربط بين مخالفة الساوند بورد وبين منع رفع المقاطع (الكليبات) يشوبه عدم التناسب. حيث إن الثقة في المحتوى المقبول تتطلب حس حسن النية، ولكن المنع المباشر والشامل للكليبات دون نص صريح يُعد توسعاً غير مبرر في العقوبة.
-                </p>
-            </div>
-        </section>
-
-        <!-- Final Verdict / Decision -->
-        <section class="bg-discord-card border border-discord-gold/40 rounded-xl p-6 shadow-xl relative space-y-4">
-            <h2 class="text-xl font-black text-discord-gold border-b border-discord-border pb-3 flex items-center gap-2">
-                <span>⚖️</span> المنطوق والقرار النهائي الصادر عن المحكمة والإدارة
-            </h2>
-
-            <div class="space-y-3 text-sm text-gray-200">
-                <div class="p-3 bg-discord-subcard border-r-4 border-discord-green rounded-l-lg">
-                    <strong class="text-white block font-bold mb-1">أولاً: في الشكل</strong>
-                    قبول الطعن المقدم من العضو **كريم (Karim)** شكلاً، وإلغاء بند مصادرة الاستئناف الملحق بالقرار السابق لعدم دستوريته.
-                </div>
-
-                <div class="p-3 bg-discord-subcard border-r-4 border-discord-red rounded-l-lg">
-                    <strong class="text-white block font-bold mb-1">ثانياً: في موضوع الساوند بورد</strong>
-                    تأييد عقوبة إيقاف سحب/إضافة/تعديل صلاحيات **الساوند بورد (Soundboard)** الخاصة بالعضو لمدة محدودة (30 يوماً) يبدأ احتسابها من تاريخ القرار الأصلي، على أن تُستعاد الصلاحيات تلقائياً بعد انقضاء المدة والتعهد بعدم التصرف الفردي.
-                </div>
-
-                <div class="p-3 bg-discord-subcard border-r-4 border-discord-gold rounded-l-lg">
-                    <strong class="text-white block font-bold mb-1">ثالثاً: في موضوع الكليبات (إلغاء جزئي)</strong>
-                    **إلغاء الحظر الشامل** على رفع المقاطع والكليبات فوراً، وتخضغ كليبات العضو المرفوعة للمراجعة الروتينية القياسية كسائر الأعضاء دون أي تمييز أو رفض تلقائي.
-                </div>
-            </div>
-
-            <p class="text-xs text-center text-gray-400 pt-4 border-t border-discord-border font-semibold">
-                صدر هذا الحكم وتنفيذه واجب على جميع جهات الإشراف والتنفيذ بالسيرفر فور النشر.
-            </p>
-        </section>
-
-        <!-- Footer -->
-        <footer class="text-center text-xs text-gray-500 py-4 border-t border-discord-border space-y-1">
-            <p>سيرفر GC الرسمي © 2026 — جميع الحقوق محفوظة لهيئة القضاء والإدارة العليا</p>
-            <p class="font-mono text-gray-600">Hosted via GitHub Pages | Repository: GC-Community-Court</p>
-        </footer>
-
+    <div class="meta-info">
+        <p><strong>Appellant:</strong> Kareem (عضو كريم)[cite: 3]</p>
+        <p><strong>Subject:</strong> Appeal against disciplinary suspension of soundboard permissions and clip submissions[cite: 3]</p>
+        <p><strong>Governing Document:</strong> The GC Constitution & Server Rules[cite: 1, 2]</p>
+        <p><strong>Ruling Status:</strong> UNFOUNDED & REJECTED IN FULL</p>
     </div>
+
+    <p>The GC Judiciary and Administration have thoroughly reviewed the appeal memorandum submitted by Kareem. After meticulous examination of the arguments, constitutional articles, and established factual evidence, the court has determined that the appeal lacks merit, distorts the interpretation of the GC Constitution, and relies on self-contradictory claims. Consequently, the appeal is officially <strong>REJECTED</strong>.</p>
+
+    <h2>Detailed Judicial Rebuttal to Appellant's Claims</h2>
+
+    <!-- Point 1 -->
+    <div class="defense-box">
+        <h3>1. Rebuttal to Procedural Defense: The Right to Appeal & Article V</h3>
+        <p><strong>Appellant's Claim:</strong> Kareem claims that his right to appeal is protected under <span class="article-ref">Article IV</span>, and that the notice's statement declaring appeals closed was null and void.</p>
+        <p><strong>The Court's Ruling:</strong> While <span class="article-ref">Article IV</span> guarantees the right to challenge a penalty[cite: 2], the appellant conveniently ignores <span class="article-ref">Article V (Unfounded Challenges)</span>, which explicitly mandates: <em>"If the judges determine that a challenge to a penalty is unfounded, an additional penalty shall be imposed on the member who made the challenge."</em>[cite: 2] The original notice correctly assessed the overwhelming evidence of guilt. By submitting this baseless appeal, Kareem has officially triggered <span class="article-ref">Article V</span>.</p>
+    </div>
+
+    <!-- Point 2 -->
+    <div class="defense-box">
+        <h3>2. Rebuttal to Non-Retroactivity & Timing Claims</h3>
+        <p><strong>Appellant's Claim:</strong> Kareem argues that the action occurred before the GC Constitution was enacted, invoking the principle of non-retroactivity.</p>
+        <p><strong>The Court's Ruling:</strong> The core tenets of the GC community—fairness, trust, and the prohibition of manipulating system structures for personal or associate advantage—have always been foundational. Furthermore, <span class="article-ref">Article I</span> strictly codifies the protection of soundboards and establishes immediate permanent prohibitions for unauthorized deletions, aligning directly with the established facts of this case[cite: 1, 2].</p>
+    </div>
+
+    <!-- Point 3 -->
+    <div class="defense-box">
+        <h3>3. Rebuttal to Investigation & Legal Representation Claims (<span class="article-ref">Article II</span>)</h3>
+        <p><strong>Appellant's Claim:</strong> Kareem alleges a lack of investigation and a denial of his right to a lawyer under <span class="article-ref">Article II</span>[cite: 3].</p>
+        <p><strong>The Court's Ruling:</strong> <span class="article-ref">Article II</span> grants members the right to appoint a lawyer, but explicitly notes that <em>"Appointing a lawyer does not automatically suspend or cancel a penalty."</em>[cite: 2] Furthermore, under the foundational <strong>Principle of Factual Judgment</strong>, decisions are made <em>"based solely on what actually occurred, the established facts, and the available evidence."</em> When a violation is caught red-handed through undeniable system manipulation, formal procedural hearings do not override clear physical evidence[cite: 2].</p>
+    </div>
+
+    <!-- Point 4 -->
+    <div class="defense-box">
+        <h3>4. Rebuttal to Intent & The Admission of Guilt Regarding the Soundboard</h3>
+        <p><strong>Appellant's Claim:</strong> Kareem argues he had no harmful intent, that the deleted soundboard was his own voice ("زوقو"), and that he deleted it merely to free up slots for general use[cite: 3].</p>
+        <p><strong>The Court's Ruling:</strong> Kareem’s own defense constitutes a <strong>full admission of guilt</strong> under <span class="article-ref">Article I</span>. He openly admits he deleted his own personalized soundboard containing his voice[cite: 3]. <span class="article-ref">Article I</span> explicitly states: 
+        <br><em>"Special protection applies to soundboards created for a specific member or containing their voice, words, or personalized content... If the deleted soundboard was created by the offender or specifically belongs to them, a personal soundboard associated with the offender shall also be added as an additional penalty alongside the initial punishment."</em>[cite: 2]
+        <br>His excuse of "freeing slots" is completely invalidated by the established evidence proving he manipulated permissions to curate space for soundboards benefiting himself and his associates[cite: 1].</p>
+    </div>
+
+    <!-- Point 5 -->
+    <div class="defense-box">
+        <h3>5. Rebuttal to Penalty Overreach (Clip Ban)</h3>
+        <p><strong>Appellant's Claim:</strong> Kareem claims the penalty overstepped by banning clip submissions, arguing the Constitution only mentions soundboards[cite: 3].</p>
+        <p><strong>The Court's Ruling:</strong> When a member engages in administrative sabotage and exploits community privileges for personal advantage, the administration and judges retain sovereign authority to suspend related community privileges (including clip submissions) to protect server integrity. Moreover, because this appeal has been proven entirely unfounded, his request to lift the clip ban is denied[cite: 1, 3].</p>
+    </div>
+
+    <div class="ruling-conclusion">
+        <h2>FINAL JUDICIAL DECREE</h2>
+        <p>1. The appeal submitted by Kareem is hereby <strong>REJECTED</strong> in its entirety due to lack of merit and direct contradiction with established evidence and constitutional articles[cite: 1, 2, 3].</p>
+        <p>2. The original suspension of soundboard permissions and rejection of clip submissions is <strong>UPHELD PERMANENTLY</strong>[cite: 1].</p>
+        <p>3. Pursuant to <strong>Article V (Unfounded Challenges)</strong>, an <strong>additional penalty</strong> is formally invoked and added to Kareem's disciplinary record for submitting a baseless challenge[cite: 2].</p>
+    </div>
+
+    <footer>
+        <p>GC Server Official Governance & Legal Department &bull; All Rights Reserved</p>
+    </footer>
+</div>
 
 </body>
 </html>
